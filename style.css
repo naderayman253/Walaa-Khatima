@@ -1,0 +1,34 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Tahoma,Arial,sans-serif}
+body{
+  color:#fff;
+  background:
+    radial-gradient(circle at 15% 20%,rgba(255,255,255,.2),transparent 12%),
+    radial-gradient(circle at 85% 25%,rgba(255,255,255,.15),transparent 13%),
+    linear-gradient(180deg,#111 0%,#262626 45%,#111 100%);
+}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.28);pointer-events:none}
+.page{position:relative;z-index:1;max-width:700px;margin:auto;text-align:center;padding:22px 16px 50px}
+h1{font-size:34px;margin:0 0 18px;color:#ffd21a;text-shadow:0 2px 5px #000}
+.photo-wrap{
+  width:min(78vw,430px);aspect-ratio:1;border-radius:50%;margin:auto;
+  padding:8px;background:rgba(0,220,70,.75);
+  box-shadow:0 0 30px rgba(0,255,80,.5);
+}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+h2{font-size:23px;line-height:1.8;margin:22px 0 12px;color:#b66a18;text-shadow:0 2px 4px #000}
+h2 span{color:#16a9ff;font-size:27px}
+.player{background:rgba(0,0,0,.35);padding:16px;border-radius:18px}
+audio{width:100%;margin-bottom:10px}
+.time{font-size:18px;font-weight:bold;margin:5px 0 12px}
+select{
+  width:100%;padding:18px;border-radius:14px;border:2px solid #ddd;
+  background:#fff;color:#222;font-size:21px;text-align:right;
+}
+.current{font-size:20px;margin-top:12px;color:#8cff9b}
+.dua{font-size:24px;line-height:1.8;color:#e7e7e7;text-shadow:0 2px 4px #000;margin-top:22px}
+@media(max-width:480px){
+  h1{font-size:29px}.photo-wrap{width:78vw}
+  h2{font-size:19px}h2 span{font-size:23px}
+  .dua{font-size:20px}
+}
