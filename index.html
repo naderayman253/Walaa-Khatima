@@ -59,7 +59,7 @@ select.addEventListener('change', () => {
     current.textContent = "لم يتم اختيار جزء";
     return;
   }
-  audio.src = `audio/part${n}.mp3`;
+  audio.src = "01.mp3";
   current.textContent = `الجزء ${n}`;
   audio.play().catch(() => {});
 });
